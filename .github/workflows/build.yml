@@ -25,7 +25,7 @@ jobs:
       - name: Apply Patches
         run: ./gradlew applyPatches
       - name: Build
-        run: ./gradlew build
+        run: ./gradlew createMojmapBundlerJar
       - name: Upload JAR files
         uses: actions/upload-artifact@v4
         with:
